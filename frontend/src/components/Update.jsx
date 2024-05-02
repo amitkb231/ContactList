@@ -14,7 +14,7 @@ const Update = () => {
 
   //receving single user data
   const getSingleData = async () => {
-    const response = await fetch(`http://localhost:5000/api/contacts/${id}` ,{
+    const response = await fetch(`https://localhost:5000/api/contacts/${id}` ,{
       headers:{Authorization : `Bearer ${localStorage.getItem("token")}`}
     });
     const result = await response.json();
@@ -31,7 +31,7 @@ const Update = () => {
     e.preventDefault();
     const updatedUser = { name, email, phone };
     console.log(updatedUser);
-    const response = await fetch(`http://localhost:5000/api/contacts/edit/${id}`, {
+    const response = await fetch(`https://localhost:5000/api/contacts/edit/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

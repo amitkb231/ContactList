@@ -14,7 +14,7 @@ const Create = () => {
     var addUser = { name:fname, email:email, phone };
     console.log(addUser);
 
-    const response = await fetch("http://localhost:5000/api/contacts", {
+    const response = await fetch("https://localhost:5000/api/contacts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

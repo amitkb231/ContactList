@@ -15,7 +15,7 @@ const Navbar = ({authState, onLogout }) => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <h3 className="navbar-brand" href="#">
-          MERN
+          Contacts
         </h3>
         <button
           className="navbar-toggler"
@@ -32,12 +32,12 @@ const Navbar = ({authState, onLogout }) => {
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link to="/create" className="nav-link" aria-current="page">
-                Create Post
+                Add Contact
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/read" className="nav-link active" aria-current="page">
-                All Post
+                My Contacts
               </Link>
             </li>
             {/* Conditional rendering of Logout link */}

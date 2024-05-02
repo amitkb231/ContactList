@@ -6,7 +6,7 @@ const Read = () => {
   const [error, setError] = useState();
 
   async function handleDelete(id) {
-    const response = await fetch(`http://localhost:5000/api/contacts/${id}`, {
+    const response = await fetch(`https://localhost:5000/api/contacts/${id}`, {
       method: "DELETE",
       headers:{Authorization : `Bearer ${localStorage.getItem("token")}`}
      
@@ -28,7 +28,7 @@ const Read = () => {
   
 
   async function getData() {
-    const response = await fetch("http://localhost:5000/api/contacts", { headers: {
+    const response = await fetch("https://localhost:5000/api/contacts", { headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`  // Include token in authorization header
     }});
     
