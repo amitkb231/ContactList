@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 //Create Schema
+//user's contact
 const userDataSchema = new mongoose.Schema(
   {
     name: {
