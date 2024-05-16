@@ -24,7 +24,7 @@ The MERN Contact List is a web application that allows users to create, read, up
 ## Installation
 1. Clone the repository:                                                                                                                                                                                          
    ``` bash
-    git clone https://github.com/your-username/mern-contact-list.git
+    git clone https://github.com/amitkb231/ContactList.git
 
 2. Navigate to the project directory:                                                                                                                                                                         
    ```bash
